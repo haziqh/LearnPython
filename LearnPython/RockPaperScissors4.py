@@ -99,11 +99,3 @@ print(f'The computer won {computer_wins} ({round(computer_win_percentage, 2)}%) 
 print(f'Number of draw(s): {draw_count} ({round(draw_percentage, 2)}%) time(s).')
 print('Goodbye!')
 
-
-
-
-
-
-#print(f'Number of draw(s):' {draw_count} ({draw_percentage}%) time(s).')
-#print('The computer won', computer_wins, '(' + str(round(computer_win_percentage, 2)) + '%' + ')', 'time(s).')
-#print('Number of draw(s):', draw_count, '(' + str(round(draw_percentage, 2)) + '%' + ')',)

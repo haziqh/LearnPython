@@ -11,6 +11,7 @@ draw_percentage = 0
 user_options = ['r', 'p', 's']
 options = ['Rock', 'Paper', 'Scissors']
 
+
 # Functions
 def print_win_summary():
     print('You won!')
@@ -18,14 +19,15 @@ def print_win_summary():
     print('Computer wins:', computer_wins)
     print('Games played:', game_count)
 
+
 def print_loss_summary():
     print('You lost!')
     print('\nUser wins:', user_wins)
     print('Computer wins:', computer_wins)
     print('Games played:', game_count)
 
-while True:
 
+while True:
     print('---------------------------------------------------------------')
 
     user_input = input('Type [R]ock / [P]aper / [S]cissors or [Q] to quit: ').lower()
@@ -91,7 +93,6 @@ if user_wins > 0:
     win_percentage = (user_wins / game_count) * 100
     computer_win_percentage = (computer_wins / game_count) * 100
     draw_percentage = (draw_count / game_count) * 100
-
 
 
 print(f'\nYou won {user_wins} ({round(win_percentage, 2)}%) time(s).')

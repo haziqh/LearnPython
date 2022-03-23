@@ -19,8 +19,3 @@ cards = []
 for suit in suits:
     for face in faces:
         cards.append((suit, face))
-
-
-
-
-print("Hello World")

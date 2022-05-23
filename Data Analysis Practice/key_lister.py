@@ -1,5 +1,5 @@
 
-game_count = 0
+count = 0
 keys = []
 
 
@@ -7,7 +7,7 @@ def add_key_to_list():
     keys.append(user_input)
 
 
-while True and game_count < 50:     # Steam has a 50 game redemption limit per hour
+while True and count < 50:     # 50 item redemption limit per hour
 
     user_input = str(input('Input key here or type [q] to end: '))
 
@@ -15,15 +15,15 @@ while True and game_count < 50:     # Steam has a 50 game redemption limit per h
         break
 
     else:
-        game_count += 1
-        print(f'Total: {game_count} game(s)')
+        count += 1
+        print(f'Total: {count} item(s)')
         add_key_to_list()
         continue
 
-if game_count > 0:
+if count > 0:
     print('---------------------------------------------------------------')
     print(*keys, sep="\n")
-    print (f'\nTotal: {game_count} game(s)')
+    print (f'\nTotal: {count} item(s)')
     print('---------------------------------------------------------------')
 
 
